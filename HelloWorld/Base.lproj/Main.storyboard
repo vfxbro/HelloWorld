@@ -27,12 +27,16 @@
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="IBz-9X-3Um"/>
+                                    <constraint firstAttribute="height" constant="50" id="Uhg-1h-8oX"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Show Text">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="makeButtonAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nkz-fH-fdI"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,6 +48,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ii1-BC-KqE" secondAttribute="bottom" constant="105" id="kvK-Ks-VKQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLable" destination="jhg-pM-JAi" id="5V6-R7-hdd"/>
+                        <outlet property="toggleButton" destination="ii1-BC-KqE" id="Fbs-e8-sRi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
